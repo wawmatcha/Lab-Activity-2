@@ -1,8 +1,8 @@
 <h1>Lab 4 - Encapsulation</h1>
 
 <p>
-    <strong>Name:</strong> Your Name<br>
-    <strong>Section:</strong> 2A
+    <strong>Name:</strong> KYRA KAY TOMAQUIN<br>
+    <strong>Section:</strong> 2E
 </p>
 
 <h2>Program Console Output</h2>
