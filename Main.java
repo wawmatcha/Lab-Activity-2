@@ -1,14 +1,16 @@
 public class Main {
+
+   // Helper Serviceable items
+   public static void performService(Serviceable item){
+     item.service(); 
+   } 
     
     // REQUIRED: Method accepting polymorphic parameter
     public static void printDetails(Vehicle vehicle) {
         vehicle.displayInfo();
         System.out.println("Age: " + vehicle.calculateAge());
         System.out.println("Vintage: " + vehicle.isVintage());
-        vehicle.moveForward();
-        vehicle.moveBackward();
-        vehicle.moveLeft();
-        vehicle.moveRight();
+        vehicle.move();
     }
 
     public static void main(String[] args) {
@@ -55,5 +57,17 @@ public class Main {
             printDetails(currentVehicle);
             System.out.println();
         }
+        
+        System.out.println("--- 4. Serviceable Items Array ---");
+        Printer printer = new Printer();
+        Serviceable[] serviceableItems = { car, motor, truck, printer };
+        
+        for (Serviceable item : serviceableItems) {
+            performService(item);
+        }
+        
+        System.out.println();
     }
+    
+    
 }

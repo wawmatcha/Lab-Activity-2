@@ -1,4 +1,4 @@
-public class Truck extends Vehicle{
+public class Truck extends Vehicle implements Serviceable{
    private double payloadCapacity;
    
    
@@ -13,25 +13,15 @@ public class Truck extends Vehicle{
      super.displayInfo();
      System.out.println("Payload Capacity: " + payloadCapacity + " tons");
    }
+
+   @Override
+    public void move(){
+    System.out.println("HONNNK HOONK Truck kun is moving heavy load");
+}
    
    @Override
-    public void moveForward() {
-        System.out.println("The truck moves forward");
-    }
+    public void service() {
+        System.out.println("Truck: Bosseng inspect cargo brakes muna.");
 
-    @Override
-    public void moveBackward() {
-        System.out.println("The truck moves backward");
-    }
-
-    @Override
-    public void moveLeft() {
-        System.out.println("The truck moves left");
-    }
-
-    @Override
-    public void moveRight() {
-        System.out.println("The truck moves right");
-    }
-
+}
 }

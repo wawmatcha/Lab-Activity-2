@@ -22,10 +22,5 @@ public abstract class Vehicle {
         return calculateAge() > 25;
     }
 
-    // Abstract methods required by Lab 2
-    public abstract void moveForward();
-    public abstract void moveBackward();
-    public abstract void moveLeft();
-    public abstract void moveRight();
-
+    public abstract void move();
  }
