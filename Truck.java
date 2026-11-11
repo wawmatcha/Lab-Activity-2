@@ -14,4 +14,24 @@ public class Truck extends Vehicle{
      System.out.println("Payload Capacity: " + payloadCapacity + " tons");
    }
    
+   @Override
+    public void moveForward() {
+        System.out.println("The truck moves forward");
+    }
+
+    @Override
+    public void moveBackward() {
+        System.out.println("The truck moves backward");
+    }
+
+    @Override
+    public void moveLeft() {
+        System.out.println("The truck moves left");
+    }
+
+    @Override
+    public void moveRight() {
+        System.out.println("The truck moves right");
+    }
+
 }

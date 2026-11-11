@@ -3,6 +3,12 @@ public class Main {
     // REQUIRED: Method accepting polymorphic parameter
     public static void printDetails(Vehicle vehicle) {
         vehicle.displayInfo();
+        System.out.println("Age: " + vehicle.calculateAge());
+        System.out.println("Vintage: " + vehicle.isVintage());
+        vehicle.moveForward();
+        vehicle.moveBackward();
+        vehicle.moveLeft();
+        vehicle.moveRight();
     }
 
     public static void main(String[] args) {
